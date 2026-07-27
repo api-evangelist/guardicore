@@ -1,8 +1,26 @@
 aid: guardicore
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/guardicore.png
 name: Guardicore
-description: Guardicore is a company surfaced as a portfolio company of battery-ventures, partech and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Guardicore is a micro-segmentation and Zero Trust network security company, founded in 2013 and
+  backed by Battery Ventures and Partech, best known for its Centra platform for software-defined
+  segmentation, application dependency mapping, and lateral-movement threat containment across data
+  center, cloud, and hybrid environments. Guardicore was acquired by Akamai in 2021 and its technology
+  now ships as Akamai Guardicore Segmentation; the guardicore.com domain redirects to the Akamai
+  Segmentation product. This profile tracks Guardicore as a distinct company in the API Evangelist
+  network. Its API reference is delivered through Akamai TechDocs and is login-gated, so no public
+  OpenAPI or standalone developer surface was discoverable during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/guardicore/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Security
+- Micro-segmentation
+- Zero Trust
+- Network Security
+- Cloud Security
+- Segmentation
+- Akamai
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/guardicore-domain-security.yml
 - type: Website
   url: https://www.guardicore.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
